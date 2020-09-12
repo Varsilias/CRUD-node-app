@@ -1,0 +1,13 @@
+<h1>{{title}}</h1>
+<ul class="list-group">
+   {{#each books as |book|}}
+       <li class="list-group-item">
+           <h1 class="lead">{{book.name}}</h1>
+           <small>Author: {{book.author}} Published on {{book.yearOfPublication}}</small>
+           <hr>
+           <button class="btn btn-default"><a href="/edit/{{book._id}}">Edit</a></button>
+            <button class="btn btn-danger pull-right"><a href="/delete/{{book._id}}" class="text-white">Delete</a></button>
+
+       </li>
+   {{/each}}
+</ul>

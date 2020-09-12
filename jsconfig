@@ -1,0 +1,65 @@
+
+// Insert one
+db.books.insert({
+    name: 'Book One',
+    author: 'Brad Traversy',
+    numberOfPages: 225,
+    yearOfPublication: '2020-06-23',
+    bookEdition: '3rd edition',
+    bookFormat: 'PDF'
+})
+
+// insertMany
+db.books.insertMany([
+    {
+    name: 'Book Two',
+    author: 'Daniel Okoronkwo',
+    numberOfPages: 200,
+    yearOfPublication: '2019-05-29',
+    bookEdition: 'first edition',
+    bookFormat: 'EPUB'
+    },
+
+    {
+    name: 'Book Three',
+    author: 'Jaden Okorie',
+    numberOfPages: 182,
+    yearOfPublication: '2021-08-21',
+    bookEdition: 'second edition',
+    bookFormat: 'MOBI'
+    }
+])
+
+//Displays all data in db
+db.<collection-name>.find()
+//E.g
+db.books.find()
+
+//Displays all data in db in readable format
+db.<collection-name>.find().pretty()
+//E.g
+db.books.find().pretty()
+
+
+
+//find DB data by name of field
+db.<collection-name>.find({ <name-of-field>: value  })
+
+//find DB data by bookFormat = PDF of field
+db.books.find({ bookFormat: 'PDF'  })
+
+// Sort DB data
+db.books.find().sort(<field-to-sort-by>: value).pretty()
+value = 1 // Ascending
+value = 2 // Descending
+
+/find no of times data appeared in db
+db.<collection-name>.find({<name of field>: value}).count
+//E.g
+db.books.find({ name: 'Book one' }).count() // outputs 1
+
+// limit no of records displayed
+db.books.find().limit()
+
+//sort and limit as well
+db.books.find().sort().limit()

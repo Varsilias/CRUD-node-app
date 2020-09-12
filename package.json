@@ -1,0 +1,23 @@
+{
+  "name": "bookapp",
+  "version": "1.0.0",
+  "description": "An App to showcase the power and usability of Node and Express",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app"
+  },
+  "keywords": [
+    "Node",
+    "Express",
+    "Javascript"
+  ],
+  "author": "Daniel Okoronkwo",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^4.5.2",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.1.0",
+    "moment": "^2.27.0",
+    "mongoose": "^5.10.3"
+  }
+}

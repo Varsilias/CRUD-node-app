@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="/bootstrap/bootstrap.min.js">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Book App</title>
+</head>
+<body>
+    {{!-- Navigation --}}
+    <nav class="navbar navbar-expand-md navbar-light bg-primary shadow-sm">
+<div class="container">
+<a class="navbar-brand" href="/">
+    Book App
+</a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="true">
+    <span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <!-- Left Side Of Navbar -->
+    <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+            <a class="nav-link" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/create">Add Book</a>
+        </li>
+    </ul>
+
+    <!-- Right Side Of Navbar -->
+    <ul class="navbar-nav ml-auto">
+        <!-- Authentication Links -->
+        <li class="nav-item">
+            <a class="nav-link" href="#">Login</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Register</a>
+        </li>
+    </ul>
+</div>
+</div>
+</nav> 
+
+
+
+
+
+    <div class="container">
+        {{{body}}}
+    </div>
+</body>
+</html>

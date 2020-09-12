@@ -1,0 +1,31 @@
+<div class="mx-auto my-2">
+    <h1>{{title}}</h1>
+    <form action="/edit/{{book._id}}" method="post">
+        <div class="form-group">
+            <label for="bookName">Title</label>
+            <input type="text" name="name" placeholder="Book title" class="form-control" value="{{book.name}}">
+        </div>
+        <div class="form-group">
+            <label for="author">Author</label>
+            <input type="text" name="author" placeholder="Author" class="form-control" value="{{book.author}}">
+        </div>
+        <div class="form-group">
+            <label for="numberOfPages">No Of Pages</label>
+            <input type="number" name="numberOfPages" class="form-control" value="{{book.numberOfPages}}">
+        </div>
+        <div class="form-group">
+            <label for="yearOfPublication">Year Published</label>
+            <input type="date" name="yearOfPublication" class="form-control" value="{{book.yearOfPublication}}">
+        </div>
+        <div class="form-group">
+            <label for="bookEdition">Edition</label>
+            <input type="text" name="bookEdition" placeholder="First, Second ..." class="form-control" value="{{book.bookEdition}}">
+        </div>
+        <div class="form-group">
+            <label for="bookFormat">Format</label>
+            <input type="text" name="bookFormat" placeholder="PDF, EPUB, MOBI " class="form-control" value="{{book.bookFormat}}">
+        </div>
+        <br>
+          <button type="submit" class="btn btn-block btn-primary mb-2">Update Book</button>
+    </form>
+</div>
